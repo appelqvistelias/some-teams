@@ -1,0 +1,1 @@
+This is a small project to practice foreach loops and arrays in PHP and properly use git. The site will contain some information about womens league football teams.
