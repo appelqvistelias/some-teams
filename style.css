@@ -1,5 +1,13 @@
+:root {
+    --grass-green: #4CAF50;
+    --light-beige: #F5F5DC;
+    --cream-white: #FFFDD0;
+    --dark-green: #388E3C;
+    --sand-color: #D2B48C;
+}
+
 body {
-    background-color: #136d15;
+    background-color: var(--dark-green);
     font-family: monospace;
     display: flex;
     justify-content: center;
@@ -8,11 +16,11 @@ body {
 main {
     width: 75vw;
     background-color: whitesmoke;
-    padding: 10px;
     border: solid 1px black;
 }
 
 .top-container {
+    background-color: var(--cream-white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,6 +35,7 @@ nav {
 }
 
 .main-container {
+    background-color: var(--grass-green);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -35,10 +44,16 @@ nav {
 }
 
 .team-info-card {
+    background-color: var(--cream-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 30%;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
 }
