@@ -13,7 +13,7 @@
         <div class="top-container">
             <h1>Some Teams</h1>
             <nav>
-                <a href="/index.php">Home</a>
-                <a href="/about.php">About</a>
+                <a href="index.php">Home</a>
+                <a href="about.php">About</a>
             </nav>
         </div>
