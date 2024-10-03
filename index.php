@@ -6,6 +6,10 @@ require_once __DIR__ . "/data.php"; ?>
 
 <div class="main-container">
 
+    <div class="text-container">
+        <p>In this section you will find information about the different teams. If you would like to visit a teams website simply click their team name.</p>
+    </div>
+
     <?php foreach ($teams as $teamName => $team) { ?>
         <article class="team-info-card">
             <a href="<?= $team['url'] ?>" target=_blank>
