@@ -57,3 +57,13 @@ nav {
 ul {
     list-style-type: none;
 }
+
+a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
