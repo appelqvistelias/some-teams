@@ -7,7 +7,8 @@ require_once __DIR__ . "/data.php"; ?>
 <div class="main-container">
 
     <div class="text-container">
-        <p>In this section you will find information about the different teams. If you would like to visit a teams website simply click their team name.</p>
+        <h2>The Teams</h2>
+        <p>Information about womens league football teams. Click the team names to visit official website.</p>
     </div>
     <div class="team-info-cards-container">
         <?php foreach ($teams as $teamName => $team) { ?>
