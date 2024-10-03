@@ -67,3 +67,15 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .main-container {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .team-info-card {
+        width: 90%;
+    }
+}
