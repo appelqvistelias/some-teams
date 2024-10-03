@@ -18,7 +18,7 @@ require_once __DIR__ . "/data.php"; ?>
             <img src="<?= $team['logo'] ?>" height="80px" width="80px">
             <ul>
                 <li>
-                    <strong><?= "League: " ?></strong><?= $team['league']; ?>
+                    <strong><?= "League: " ?></strong><?= stripslashes($team['league']); ?>
                 </li>
                 <li>
                     <strong><?= "UEFA Ranking: " ?></strong><?= $team['uefa-coefficient-ranking']; ?>
