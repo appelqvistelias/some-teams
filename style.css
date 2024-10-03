@@ -15,7 +15,6 @@ body {
 
 main {
     width: 75vw;
-    background-color: whitesmoke;
     border: solid 1px black;
 }
 
@@ -31,7 +30,7 @@ main {
 
 nav {
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 
 .main-container {
