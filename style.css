@@ -6,11 +6,11 @@
     --sand-color: #D2B48C;
 }
 
-body, .top-container, nav, .main-container, .text-container, .team-info-cards-container, .team-info-card {
+body, .top-container, nav, .main-container, .text-container, .team-info-cards-container, .team-info-card, footer {
     display: flex;
 }
 
-body, .team-info-cards-container {
+body, .team-info-cards-container, footer {
     justify-content: center;
 }
 
@@ -92,6 +92,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+footer {
+    background-color: var(--cream-white);
+    padding: 10px;
+    border-top: 1.5px solid black;
 }
 
 @media (max-width: 1125px) {
