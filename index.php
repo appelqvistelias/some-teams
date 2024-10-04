@@ -3,6 +3,7 @@
 require_once __DIR__ . "/header.php";
 
 require_once __DIR__ . "/data.php"; ?>
+
 <div class="text-info-box">
     <h2>The Teams</h2>
     <p>Information about womens league football teams. Click the team names to visit official website.</p>
