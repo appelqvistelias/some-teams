@@ -36,6 +36,16 @@ header, footer {
 
 header {
     border-bottom: 2px solid black;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    text-align: start;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
 }
 
 footer {
@@ -44,7 +54,7 @@ footer {
 
 .team-info-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* auto-fit creates as many columns as the space allows */
     gap: 10px;
 }
 
