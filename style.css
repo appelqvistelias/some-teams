@@ -6,37 +6,23 @@
     --sand-color: #D2B48C;
 }
 
-body, .top-container, nav, .text-container, .team-info-card, footer {
-    display: flex;
-}
+body {
+    background-color: var(--grass-green);
+    font-family: sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
 
-body, footer {
-    justify-content: center;
-}
-
-.top-container, .text-container, .team-info-card {
-    align-items: center;
-}
-
-.text-container, .team-info-card {
-    flex-direction: column;
 }
 
 .main-container, .text-container {
     gap: 10px;
 }
 
-body {
-    background-color: var(--grass-green);
-    font-family: sans-serif;
-}
 
 main, .text-container, .team-info-card {
     border: solid 1px black;
-}
-
-.text-container, .team-info-card {
-    border-radius: 10px;
 }
 
 main {
@@ -45,13 +31,18 @@ main {
 
 .top-container {
     background-color: var(--cream-white);
+    display: grid;
+    grid-template-columns: 80% 20%;
     justify-content: space-between;
+    align-items: center;
     padding-left: 20px;
     padding-right: 20px;
     border-bottom: 1.5px solid black;
 }
 
 nav {
+    display: flex;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -70,11 +61,18 @@ nav {
 
 .team-info-card {
     background-color: var(--cream-white);
+    display: grid;
+    place-items: center;
     padding: 10px;
+}
+
+.text-container, .team-info-card {
+    border-radius: 10px;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 a {
