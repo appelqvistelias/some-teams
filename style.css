@@ -6,67 +6,65 @@
     --sand-color: #D2B48C;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes padding and border included into total size */
+}
+
 body {
     background-color: var(--grass-green);
     font-family: sans-serif;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-
-}
-
-.main-container, .text-container {
-    gap: 10px;
-}
-
-
-main, .text-container, .team-info-card {
-    border: solid 1px black;
+    display: flex;
+    justify-content: center;
 }
 
 main {
-    width: 80vw;
-}
-
-.top-container {
-    background-color: var(--cream-white);
-    display: grid;
-    grid-template-columns: 80% 20%;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-bottom: 1.5px solid black;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.main-container {
     background-color: var(--dark-green);
+    width: 80vw;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
+    grid-template-rows: auto 1fr auto; /* header grid footer */
+    gap: 10px;
+    border: 1px solid black;
 }
 
-.text-container {
+header, footer {
     background-color: var(--cream-white);
-    grid-column: span 3;
-    padding: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+footer {
+    border-top: 2px solid black;
+}
+
+.team-info-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.text-info-box {
+    background-color: var(--cream-white);
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.team-name-h2 {
+    margin-bottom: 10px;
 }
 
 .team-info-card {
     background-color: var(--cream-white);
-    display: grid;
-    place-items: center;
     padding: 10px;
-}
-
-.text-container, .team-info-card {
+    text-align: center;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
@@ -83,22 +81,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-footer {
-    background-color: var(--cream-white);
-    padding: 10px;
-    border-top: 1.5px solid black;
-}
-
-@media (max-width: 1125px) {
-    .main-container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .main-container {
-        grid-template-columns: 1fr;
-    }
 }
