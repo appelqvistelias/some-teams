@@ -68,10 +68,6 @@ nav {
     padding: 15px;
 }
 
-p, h2 {
-    margin: 0;
-}
-
 .team-info-card {
     background-color: var(--cream-white);
     padding: 10px;
