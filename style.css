@@ -1,9 +1,7 @@
 :root {
     --grass-green: #4CAF50;
-    --light-beige: #F5F5DC;
     --cream-white: #FFFDD0;
     --dark-green: #388E3C;
-    --sand-color: #D2B48C;
 }
 
 * {
@@ -80,7 +78,6 @@ nav {
 
 ul {
     list-style-type: none;
-    padding: 0;
 }
 
 a {
