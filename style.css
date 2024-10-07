@@ -12,7 +12,7 @@
 
 body {
     background-color: var(--grass-green);
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: center;
 }
@@ -91,6 +91,13 @@ a {
     color: black;
 }
 
-a:hover {
-    text-decoration: underline;
+h1, h2 {
+    font-family: "Oswald", sans-serif;
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+    a:hover {
+        text-shadow: 0 0 10px var(--grass-green); /* [offset x] [offset y] [blur-radius] [color] */
+    }
 }
